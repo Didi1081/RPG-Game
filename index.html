@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>What's for Lunch Game</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- The Splat in HTML Beginning Test ----->
+  <img class="d-none" img id="myImg" src="https://newryswimmingclub.co.uk/wp-content/uploads/2018/06/winner.png" alt="Winner"
+    style="width:100%;max-width:300px">
+  <img class="d-none" img id="myImg2" src="http://www.onlygfx.com/wp-content/uploads/2017/10/blue-watercolor-splatter-6-1024x874.png"
+    alt="Winner" style="width:100%;max-width:300px">
+  <img class="d-none" img id="myImg3" src="https://png2.kisspng.com/20180209/epw/kisspng-watercolor-painting-euclidean-vector-watercolor-ink-jet-shading-5a7e78ba4ba9d5.2700057815182378823099.png"
+    alt="Winner" style="width:100%;max-width:300px">
+  <img class="d-none" img id="myImg4" src="http://www.onlygfx.com/wp-content/uploads/2017/10/green-watercolor-splatter-13.png"
+    alt="Winner" style="width:100%;max-width:300px">
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <img class="modal-content" id="img02">
+    <img class="modal-content" id="img03">
+    <img class="modal-content" id="img04">
+    <!-- <div id="caption"></div> -->
+  </div>
+
+  <!-- The Splat in HTML Ending Test ----->
+
+
+
+  <h1 class="text-center box w3-container w3-container w3-center w3-animate-bottom">
+    <strong>The Menu Game</strong>
+  </h1>
+  <hr> ">
+  <div class="container box header menuone w3-container w3-center w3-animate-opacity ">
+    <h2 class="section-heading col-sm w3-container w3-center w3-animate-opacity">
+      Welcome! This is a game (not a menu for a specialty shop.)
+    </h2>
+    <h6 class="col-sm">To play the game, start by choosing a lunch character. Then an opponent will be chosen for you.
+      Press
+      the food fight button to start the fun!
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">.</a>
+
+      </li>
+      </ul>
+  </div>
+  </div>
+
+
+
+
+  <div class="container box rounded menutwo ">
+
+    <h3>Choose your lunch player...</h3><span class="number-to-guess-two"></span>
+    <div id="characters"></div>
+
+
+  </div>
+
+  </div>
+  <div class="row">
+
+    <div class="col-lg-6">
+    </div>
+
+
+
+
+    <section class="page-section clearfix">
+      <div class="container menuthree box">
+        <div class="intro">
+          <div class="intro-text left-0 bg-faded p-5 rounded">
+            <h2 class="section-heading mb-4 marginh1">
+              <span class="section-heading-upper">Your Lunch Player </span>
+              <span class="section-heading-lower Your-HP">| Your Health Points</span>
+              <div id="score"></div>
+            </h2>
+            <p class="mb-3">
+            </p>
+            <div id="display"></div>
+
+            <!-- <div class="intro-button mx-auto">
+                        <a class="btn btn-primary btn-xl" href="#">A button</a>
+                      </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="col-sm">
+      <button type="button" class="btn btn-danger" id="fightButton">Food Fight Button</button>
+    </div>
+
+
+
+
+    <div class="container three menusix box">
+      <div class="row">
+        <div class="col-sm">
+          <h3 class="yourDefenderFont">Your Defender</h3><span id="number-to-guess-six"></span>
+          <div id="enemieshere"></div>
+        </div>
+
+        <div class="col-sm">
+          <h5 class="enemyHPFont"> | Defender Health Points</h5>
+          <div id="enemyscore"></div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  </div>
+
+  </div>
+
+  </div>
+  </div>
+
+
+  </div>
+
+
+
+
+  <!-- <div class="container two rounded">
+          
+                <h3>Your lunch player...</h3><span id="number-to-guess-three"></span>
+                
+              
+                
+            </div>
+    
+          </div>
+          <div class="row">
+    
+            <div class="col-lg-6">
+              </div> -->
+
+
+
+
+  <!-- <div class="container one menufour box">
+
+      <h2>The Food Fight Section...</h2><span id="number-to-guess-four"></span>
+
+      <br>
+
+
+
+      <h4>Your character...</h4><span id="number-to-guess-four"></span>
+      <div class="col-sm progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+          aria-valuemax="100" style="width: 50%"></div>
+      </div>
+
+      <br>
+      <br>
+
+      <br>
+
+      <br>
+
+
+      <h4>Your Defender...</h4><span id="number-to-guess-four"></span>
+
+      <div class="col-sm progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+          aria-valuemax="100" style="width: 50%"></div>
+      </div>
+
+
+
+    </div> -->
+
+  </div>
+
+  <!-- <div class="container two menufive box">
+                  <div class="row">
+                      <div class="col-sm">
+                          <h3>Food Fight Section</h3><span id="number-to-guess-five"></span>
+                        </div>
+                        
+                        <div class="col-sm progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                        </div>
+
+                        </div>
+      
+
+                </div>
+                <div class="row">
+          
+                  <div class="col-lg-6">
+                    </div>
+    
+    
+                    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+
+// Need to create Characters
+// The user needs to click on the characters and based on what the user clicks it should display the enemies
+//The user needs to fight the remaining enemies and needs to click on one enemy. 
+//The player should press the attack button. 
+//This makes the HP (health points bar go down for the enemy
+//A counter attack is triggered and some of the HP (Health points) goes down for the player.)
+//When the user defeats the enemy (HP === 0), then the player can choose another enemy. 
+
+
+
+
+  </script>
+
+  <script>
+    
+    //created an empty variable for player one and computer
+    var playerHealthPoints = [];
+    var computerHealthPoints = [];
+    var enemyResults;
+    var modal = document.getElementById('myModal');
+    var img = document.getElementById('myImg');
+    var img2 = document.getElementById('myImg2');
+    var img3 = document.getElementById('myImg3');
+    var img4 = document.getElementById('myImg4');
+    var modalImg = document.getElementById("img01");
+    var modalImg2 = document.getElementById("img02");
+    var modalImg3 = document.getElementById("img03");
+    var modalImg4 = document.getElementById("img04");
+    var captionText = document.getElementById("caption");
+    //created 4 objects (characters) with properties inside of them
+
+    var characterOne = {
+      name: "Larry the 'Drunken fu Master'",
+      attack: 50,
+      quote: "i..is..Larry...",
+      healthPoints: 100,
+      counterAttack: 10,
+      image: "https://i.pinimg.com/originals/08/40/44/084044820134d07109d72db7383790b2.gif"
+      //image: 'https://ih0.redbubble.net/image.384728485.0260/sticker,375x360-bg,ffffff.u5.png'
+    }
+
+    var characterTwo = {
+      name: "Sally the 'Melt n pet'",
+      attack: 20,
+      quote: "Hello. I am Sally. I like melting things and staring at things in a creepy manner.",
+      healthPoints: 100,
+      counterAttack: 5,
+      image: "https://media.giphy.com/media/26xBK9cIkUSQ104k8/source.gif"
+      // image: "https://orig00.deviantart.net/901a/f/2014/308/7/3/magic_pizza__by_mmidori31-d858pn8.gif"
+    }
+
+    var characterThree = {
+      name: "Henry and The El Niño",
+      attack: 10,
+      quote: "Hi, I'm Henry and this is my friend THE EL NINO.",
+      healthPoints: 100,
+      counterAttack: 10,
+      image: "https://media.giphy.com/media/l3q2tvaYp4KseN22A/source.gif"
+      //image: "https://ih0.redbubble.net/image.498597179.5929/sticker,375x360-bg,ffffff.u2.png"
+    }
+
+    var characterFour = {
+      name: "Abby the 'Bowler'",
+      attack: 100,
+      quote: "I'm Abby. I like bowling every Saturday Night.",
+      healthPoints: 100,
+      counterAttack: 15,
+      image: "https://media.giphy.com/media/d1FL4zXfIQZMWFQQ/giphy.gif"
+      //image: "https://i.pinimg.com/originals/86/ae/0b/86ae0b2400c92d333751c8d9a9ae68e4.png"
+    }
+
+    var characterFive = {
+      name: "Bob",
+      attack: 5,
+      quote: "I'm Bob. You can call me Bobby for short.",
+      healthPoints: 100,
+      counterAttack: 5,
+      image: "https://media.giphy.com/media/l3q2rXZur7pydrDwI/source.gif"
+      //   //image: "https://i.pinimg.com/originals/86/ae/0b/86ae0b2400c92d333751c8d9a9ae68e4.png"
+    }
+
+    //Created an array for the characters
+    var characters = [characterOne, characterTwo, characterThree, characterFour, characterFive];
+
+    // Created a forloop to go through the array of characters
+    function populateChars() {
+      $('#characters').empty();
+
+      for (i = 0; i < characters.length; i++) {
+
+        //created a variable for the current character inside of the forloop 
+        var currentCharacterName = characters[i].name;
+        var characterDiv = $('<div>');
+        characterDiv.attr('data-value', i);
+
+        var characterNameDiv = $('<div>');
+        characterDiv.addClass('characterContainer w3-container w3-center w3-animate-opacity w3-hover-opacity ');
+        var image = $('<img>');
+        image.attr('src', characters[i].image);
+
+        characterDiv.append(image);
+        characterNameDiv.append(currentCharacterName);
+        characterDiv.append(characterNameDiv);
+        $("#characters").append(characterDiv);
+      }
+
+      gameSetup();
+
+
+    }
+
+    populateChars();
+
+    function gameSetup() {
+      $('.characterContainer').on('click', function () {
+        var result = $(this).attr('data-value');
+        alert(characters[result].name);
+
+
+        var enemyIndex = Math.floor(Math.random() * characters.length);
+
+        enemyResults = characters[enemyIndex];
+        var enemyScoreResults;
+        var myScoreResults;
+        // *****we already have the reults from when the user picks the charcter and use the (. whatever ) to pull that information and then use it. ***
+        $("#display").html(`<img src="${characters[result].image}" height="64px" width="64px">`);
+        $("p").text(characters[result].quote);
+
+        $("#enemieshere").html(`<img src="${enemyResults.image}" height="64px" width="64px">`);
+
+        $("#fightButton").on('click', function () {
+
+          console.log(characters.length);
+
+
+          console.log("button 1 works");
+          // Calculate hit points
+          enemyScoreResults = (enemyResults.healthPoints) - (characters[result].counterAttack)
+          myScoreResults = (characters[result].healthPoints) - enemyResults.counterAttack;
+          // WE are updating character objects with new points
+          characters[result].healthPoints = myScoreResults;
+          enemyResults.healthPoints = enemyScoreResults;
+          // console.log(enemyScoreResults, " enemey score");
+          // console.log(myScoreResults, "my score results");
+
+          // We are updating the scores in the html
+          $("#score").text(myScoreResults);
+          $("#enemyscore").text(enemyScoreResults);
+
+          //I need to push this into the #score
+
+
+          if (enemyScoreResults <= 0) {
+            // alert("You win, pick another player");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            modalImg2.src = img2.src;
+            modalImg3.src = img3.src;
+            modalImg4.src = img4.src;
+            // We are resetting the game 
+            enemyScoreResults = null;
+            myScoreResults = null;
+            $('#display').empty();
+            $('#enemieshere').empty();
+            $("#score").empty();
+            $('#enemyscore').empty();
+
+
+            characters.splice(enemyIndex, 1);
+            populateChars();
+            enemyIndex = Math.floor(Math.random() * characters.length);
+
+          } else if (myScoreResults <= 0) {
+            alert("You lose, pick another player");
+            enemyScoreResults = null;
+            myScoreResults = null;
+            characters.splice(result, 1);
+            populateChars();
+            enemyIndex = Math.floor(Math.random() * characters.length);
+            $('#display').empty();
+            $('#enemieshere').empty();
+            $("#score").empty();
+            $('#enemyscore').empty();
+
+          } else {
+            $("#score").text(myScoreResults);
+            $("#enemyscore").text(enemyScoreResults);
+            alert(" Fight again !  ")
+          }
+
+
+        });
+
+      });
+
+
+    }
+
+
+    // The splat beginning JS ------>
+    // Get the modal
+
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+
+
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+
+    // The Splat ending JS ------------->
+
+
+  </script>
+</body>
+
+</html>
+
+
+<!-- Here's how the app works:
+
+When the game starts, the player will choose a character by clicking on the fighter's picture. The player will fight as that character for the rest of the game.
+
+The player must then defeat all of the remaining fighters. Enemies should be moved to a different area of the screen.
+
+The player chooses an opponent by clicking on an enemy's picture.
+
+Once the player selects an opponent, that enemy is moved to a defender area.
+
+The player will now be able to click the attack button.
+
+Whenever the player clicks attack, their character damages the defender. The opponent will lose HP (health points). These points are displayed at the bottom of the defender's picture.
+The opponent character will instantly counter the attack. When that happens, the player's character will lose some of their HP. These points are shown at the bottom of the player character's picture.
+The player will keep hitting the attack button in an effort to defeat their opponent.
+
+When the defender's HP is reduced to zero or below, remove the enemy from the defender area. The player character can now choose a new opponent.
+The player wins the game by defeating all enemy characters. The player loses the game the game if their character's HP falls to zero or below.
+
+Option 2 Game design notes
+Each character in the game has 3 attributes: Health Points, Attack Power and Counter Attack Power.
+
+Each time the player attacks, their character's Attack Power increases by its base Attack Power.
+
+For example, if the base Attack Power is 6, each attack will increase the Attack Power by 6 (12, 18, 24, 30 and so on).
+The enemy character only has Counter Attack Power.
+
+Unlike the player's Attack Points, Counter Attack Power never changes.
+The Health Points, Attack Power and Counter Attack Power of each character must differ.
+
+No characters in the game can heal or recover Health Points.
+
+A winning player must pick their characters wisely by first fighting an enemy with low Counter Attack Power. This will allow them to grind Attack Power and to take on enemies before they lose all of their Health Points. Healing options would mess with this dynamic.
+Your players should be able to win and lose the game no matter what character they choose. The challenge should come from picking the right enemies, not choosing the strongest player. -->
